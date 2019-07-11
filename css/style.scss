@@ -56,39 +56,66 @@ header {
     }
 }
 
+h4 {
+    font-weight: 400;
+    font-size: .8em;
+    color: $textMedGrey;
+    padding-left: 15px;
+}
+
 section {
-    background-color: $white;
-    border-top: 1px solid #E2E2E5;
-    border-bottom: 1px solid #E2E2E5;
-    padding: 15px;
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    margin-bottom: 1.2em;
-    h2 {
-        font-size: 1.3em;
-        font-weight: 400;
-    }
-    a {
-        color: #CCCCCF;
-    }
-    a:hover {
-        color: $purple;
-    }
-    p {
-        color: #D5D5D5
-    }
-    h4 {
-        font-weight: 400;
-        font-size: .8em;
-        color: $textMedGrey;
+    &.provider {
+        background-color: $white;
+        border-top: 1px solid #E2E2E5;
+        border-bottom: 1px solid #E2E2E5;
+        padding: 15px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, auto);
+        align-items: center;
+        margin-bottom: 1.2em;
+        h2 {
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+        a {
+            color: #CCCCCF;
+        }
+        a:hover {
+            color: $purple;
+        }
+        p {
+            color: #bcbcbc
+        }
     }
     &.visit-details {
-        grid-template-columns: repeat(2, auto);
-        background-color: transparent;
-    }
-    &.visit-details .content {
-        background-color: $white;
+        background-color: white;
+        padding: 3px 8px;
+        margin-top: 5px;
+        .content {
+            margin: 8px 15px;
+            padding-bottom: 12px;
+            background-color: $white;
+            display: grid;
+            grid-template-columns: 66% 34%;
+            border-bottom: 1px solid #dcdce2;
+        }
+        p {
+            color: black;
+            font-size: .7em;
+        }
+        h5 {
+            color: $textMedGrey;
+            font-weight: normal;
+            font-size: .5em;
+        }
+        .apptStatus button {
+            background-color: $purple;
+            border-radius: 20px;
+            color: white;
+            float: right;
+            padding: 5px 25px;
+            font-size: .1em;
+        }
     }
 }
